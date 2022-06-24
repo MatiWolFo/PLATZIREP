@@ -28,13 +28,27 @@ function sketchLine(colour, startX, startY, endX, endY) {
 //To call the function, remember the colours are strings
 //Each line calls the function to draw a star line
 //WHILE or FOR not applied yet
-sketchLine("black", 200, 0, 250, 150);
-sketchLine("black", 250, 150, 400, 150);
-sketchLine("black", 400, 150, 280, 240);
-sketchLine("black", 280, 240, 320, 400);
-sketchLine("black", 320, 400, 200, 300);
-sketchLine("black", 200, 300, 80, 400);
-sketchLine("black", 80, 400, 120, 240);
-sketchLine("black", 120, 240, 0, 150);
-sketchLine("black", 0, 150, 150, 150);
-sketchLine("black", 150, 150, 200, 0);
+sketchLine("red", 0, 0, 1, 1);
+
+var lines = 20;
+var l = 0;
+var yS;
+var xE;
+var xS;
+var yE;
+var colour1 = "black";
+var colour2 = "red";
+var colour3 = "blue";
+var colour4 = "green";
+for (var l = 0; l <= lines; l++) {
+    xE = 10 * l;
+    yS = 10 * l;
+    sketchLine(colour1, 0, yS, xE, 200);
+    console.log("Line " + l);
+}
+for (var l = 0; l <= lines; l++) {
+    xE = 10 * l;
+    yS = 10 * l;
+    sketchLine(colour2, 200, yS, xE, 0);
+    console.log("Line " + l);
+}
